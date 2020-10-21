@@ -15,7 +15,25 @@ public partial class Ex3_ArrayDescending : System.Web.UI.Page
         string temp = "0";
         for (int i = 0; i <= sInput.Length -1; i++)
         {
-            if(sInput.Substring()
+            if(sInput.Substring(i,1) !="")
+            {
+                temp += sInput.Substring(i, 1);
+            }
+            else
+            {
+                aInput[j] = int.Parse(temp);
+                j++;
+                temp = "0";
+            }
+        }
+        Array.Sort(aInput);
+        Array.Reverse(aInput);
+        foreach (int i in aInput)
+        {
+            if(i != 0)
+            {
+                Response.Write(i + "&nbsp;&nbsp;");
+            }
         }
     }
 }
