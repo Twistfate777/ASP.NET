@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:TextBox ID="txtInput" runat="server"></asp:TextBox>
-            <asp:Button ID="btnSubmit" runat="server" Text="降序" />
+            <asp:Button ID="btnSubmit" runat="server" Text="降序" OnClick="BtnSubmit_Click" />
         </div>
     </form>
 </body>
