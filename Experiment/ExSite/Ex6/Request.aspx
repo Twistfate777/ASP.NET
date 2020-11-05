@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AccountPage.aspx.cs" Inherits="AccountPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Request.aspx.cs" Inherits="Ex6_Request" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:HyperLink ID="lblMsg" runat="server"></asp:HyperLink>
         </div>
     </form>
 </body>
