@@ -25,11 +25,29 @@ public class Account
         set { _Name = value; }
     }
 
+    public void Deposit(decimal amount)
+    {
+        if (amount > 0)
+        {
+            this._Balance += amount;
+        }
+        else
+        {
+            throw new Exception("存款金额不能小于等于0！");
+        }
+    }
+
     public decimal Balance
     {
         get { return _Balance; }
         set { _Balance = value; }
     }
+
+    public void Acquire(int v)
+    {
+        throw new NotImplementedException();
+    }
+
     public Account(string id, string name, decimal balance)
     {
         //
